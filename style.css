@@ -4,7 +4,6 @@ body {
 }
 header {
 	background-color: #FFE1F6;
-	color: #000;
 }
 footer {
 	padding-top: 15px;
@@ -37,4 +36,5 @@ a {
 }
 .menu {
 	width: 205px;
+	color: #000;
 }
