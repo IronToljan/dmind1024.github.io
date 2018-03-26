@@ -1,1 +1,39 @@
-
+body {
+	background-image: url("phone.jpg");
+	margin: 0;
+}
+header {
+	background-color: #FFE1F6;
+}
+footer {
+	padding-top: 15px;
+	background-color: #352733;
+	color: #FFF;
+	position: fixed;
+    bottom: 0;
+	width: 100%;
+}
+div {
+	background-color: white;
+	width: 60%;
+	height: 80%;
+	margin-left: 20%;
+	
+}
+table {
+	margin: auto;
+}
+td {
+	width: 100px;
+	text-align: center;
+}
+p {
+	text-align: center;
+}
+a {
+	color: white;
+	text-decoration: none;
+}
+.menu {
+	width: 205px;
+}
