@@ -1,5 +1,5 @@
 body {
-	background-image: url("phone.jpg");
+	background-image: url("img/phone.jpg");
 	margin: 0;
 }
 header {
@@ -12,9 +12,10 @@ footer {
 	position: fixed;
     bottom: 0;
 	width: 100%;
+	text-align: center;
 }
 div {
-	background-color: white;
+	background-color: #fff;
 	width: 60%;
 	height: 80%;
 	margin-left: 20%;
@@ -27,14 +28,29 @@ td {
 	width: 100px;
 	text-align: center;
 }
-p {
-	text-align: center;
-}
 a {
-	color: white;
 	text-decoration: none;
+	color: #000;
+}
+a:hover {
+	color: #FF709C;
+}
+footer a {
+	color: #fff;
 }
 .menu {
 	width: 205px;
 	color: #000;
+}
+.content {
+	margin-top: 10%;
+	text-align: center;
+	border: 2px double black;
+	border-radius: 5px;
+}
+li {
+	list-style-type: none;
+}
+#title {
+	margin-left: 35px;
 }
