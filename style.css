@@ -2,17 +2,11 @@ body {
 	background-image: url("img/phone.jpg");
 	margin: 0;
 }
+ul {
+	padding: 0;
+}
 header {
 	background-color: #FFE1F6;
-}
-footer {
-	padding-top: 15px;
-	background-color: #352733;
-	color: #FFF;
-	position: fixed;
-    bottom: 0;
-	width: 100%;
-	text-align: center;
 }
 div {
 	background-color: #fff;
@@ -35,15 +29,12 @@ a {
 a:hover {
 	color: #FF709C;
 }
-footer a {
-	color: #fff;
-}
 .menu {
 	width: 205px;
 	color: #000;
 }
 .content {
-	margin-top: 10%;
+	margin-top: 30%;
 	text-align: center;
 	border: 2px double black;
 	border-radius: 5px;
@@ -60,4 +51,10 @@ li {
 }
 #lb {
 	margin-top: 10px;
+}
+.hello {
+	border: 2px solid #FFE1F6;
+	border-radius: 5px;
+	text-align: center;
+	margin-top: 10%;
 }
