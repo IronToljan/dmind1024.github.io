@@ -140,9 +140,9 @@
 
 			 document.getElementById(fio).innerHTML = "";
 			 document.getElementById(average).innerHTML = "";
-			 var elem = document.getElementById(id).children[0];
-			 elem.remove();
-
+			 var block = document.getElementById(id);
+			 var image = block.children[0];
+			 block.removeChild(image);
 
 		 }
 
