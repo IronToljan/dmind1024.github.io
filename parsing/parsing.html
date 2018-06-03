@@ -140,8 +140,15 @@
 
 			 document.getElementById(fio).innerHTML = "";
 			 document.getElementById(average).innerHTML = "";
-			 var image = id.children[0]
-			 id.removeChild(image)
+			 
+			 var block = document.getElementById(id);
+
+			 //удалить картинку, а div оставить
+
+			 var image = block.children[0]
+
+			 block.removeChild(image)
+
 		 }
 
 		}
