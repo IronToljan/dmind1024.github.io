@@ -31,7 +31,7 @@
 <body>
 
 <div id="wrapper">
-	<p class="qwerty"><a name="I-12-1" id="I-12-1" href="#" onmouseover="showSelectedCategory(this)">Романтизм</a></p>
+	<p class="qwerty"><a name="Romanticism" id="Romanticism" href="#" onmouseover="showSelectedCategory(this)">Романтизм</a></p>
 	<p class="qwerty"><a name="I-11-1" id="I-11-1" href="#" onmouseover="showSelectedCategory(this)">Сентиментализм</a></p>
 	<p class="qwerty"><a name="I-10-1" id="I-10-1" href="#" onmouseover="showSelectedCategory(this)">Реализм</a></p> 
 	<p class="qwerty"><a name="Impressionism" id="Impressionism" href="#" onmouseover="showSelectedCategory(this)">Импрессионизм</a></p> 
@@ -42,23 +42,23 @@
 
 	<div name="fio0" id="fio0"></div>
 	<div name="average0" id="average0"></div>
-	<div name="id0" id="id0"></div>
+	<img name="id0" id="id0" src="">
 
 	<div name="fio1" id="fio1"></div>
 	<div name="average1" id="average1"></div>
-	<div name="id1" id="id1"></div>
+	<img name="id1" id="id1" src="">
 
 	<div name="fio2" id="fio2"></div>
 	<div name="average2" id="average2"></div>
-	<div name="id2" id="id2"></div>
+	<img name="id2" id="id2" src="">
 
 	<div name="fio3" id="fio3"></div>
 	<div name="average3" id="average3"></div>
-	<div name="id3" id="id3"></div>
+	<img name="id3" id="id3" src="">
 
-	<div name="fio4" id="fio4"></div>
-	<div name="average4" id="average4"></div>
-	<div name="id4" id="id4"></div>
+	<div name="fio4" id="fio4">Имя художника: hgjgjhgjhg</div>
+	<div name="average4" id="average4">Годы жизни: 1995-4658</div>
+	<img name="id4" id="id4" src="">
 
 	<script type="text/javascript">
 
@@ -113,7 +113,7 @@
 			 document.getElementById(fio).innerHTML = "Имя художника: "+
 			 xmlDoc.getElementsByTagName("fio")[i].childNodes[0].nodeValue;
 			 document.getElementById(average).innerHTML = "Годы жизни: " +
-			 xmlDoc.getElementsByTagName("average")[i].childNodes[0].nodeValue + "\n Знаменитая работа:";
+			 xmlDoc.getElementsByTagName("average")[i].childNodes[0].nodeValue;
 			 var rtut = document.getElementById(id);
 			 img = document.createElement("IMG");
 			 img.src = xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
@@ -140,14 +140,9 @@
 
 			 document.getElementById(fio).innerHTML = "";
 			 document.getElementById(average).innerHTML = "";
-			 
-			 var block = document.getElementById(id);
+			 var elem = document.getElementById(id);
+			 elem.parentNode.removeChild(elem);
 
-			 //удалить картинку, а div оставить
-
-			 var image = block.children[0];
-
-			 block.removeChild(image);
 
 		 }
 
