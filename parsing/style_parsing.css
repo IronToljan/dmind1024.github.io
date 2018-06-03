@@ -19,3 +19,7 @@ a:hover {
 img {
 	width: 60%;
 }
+body {
+	margin: 0;
+	text-align: center;
+}
