@@ -140,7 +140,8 @@
 
 			 document.getElementById(fio).innerHTML = "";
 			 document.getElementById(average).innerHTML = "";
-			 document.getElementsByTagName("img").innerHTML = "";
+			 var image = id.children[0]
+			 id.removeChild(image)
 		 }
 
 		}
