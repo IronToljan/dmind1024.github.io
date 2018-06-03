@@ -10,3 +10,9 @@ a {
  .qwerty {
 	text-align: center;
 }
+#fio0, #fio1, #fio2, #fio3, #fio4, #average0, #average1, #average2, #average3, #average4{
+	font-size: 20pt;
+}
+a:hover {
+	text-decoration: underline;
+}
