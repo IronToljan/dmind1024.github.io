@@ -114,8 +114,10 @@
 			 xmlDoc.getElementsByTagName("fio")[i].childNodes[0].nodeValue;
 			 document.getElementById(average).innerHTML = "Годы жизни: " +
 			 xmlDoc.getElementsByTagName("average")[i].childNodes[0].nodeValue;
-			 document.getElementById(id).src =
-			 xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
+			 var rtut = document.getElementById(id);
+			 img = document.createElement("IMG");
+			 img.src = xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
+			 rtut.appendChild(img);
 
 			 // increment by 1 each time the category matches
 			 categoryCounter++;
