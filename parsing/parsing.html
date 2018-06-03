@@ -113,7 +113,7 @@
 			 document.getElementById(fio).innerHTML = "Имя художника: "+
 			 xmlDoc.getElementsByTagName("fio")[i].childNodes[0].nodeValue;
 			 document.getElementById(average).innerHTML = "Годы жизни: " +
-			 xmlDoc.getElementsByTagName("average")[i].childNodes[0].nodeValue+<br>+"qwerty";
+			 xmlDoc.getElementsByTagName("average")[i].childNodes[0].nodeValue+"<p>Знаменитая картина художника:</p>";
 			 var rtut = document.getElementById(id);
 			 img = document.createElement("IMG");
 			 img.src = xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
