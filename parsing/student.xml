@@ -1,72 +1,77 @@
 <students>
-	<student group="I-12-1">
-	<fio>Програмістов Юрій Петрович</fio>
-	<average>34.50</average>
-	<id>http://www.kopyl.by/wp-content/uploads/2010/09/cry.jpg</id>
+	<student group="Romanticism">
+	<fio>Уильям Тёрнер</fio>
+	<average>1775-1851</average>
+	<id>https://lh5.googleusercontent.com/-p2EYfSvgdSE/UMX6ODAvgAI/AAAAAAAAARA/N7CC2sMMHQw/s640/2.jpg</id>
 	</student>
-	<student group="I-12-1">
-	<fio>Аштемеелкін Сидір Львовіч</fio>
-	<average>32.25</average>
-	<id>http://www.kopyl.by/wp-content/uploads/2010/09/cry.jpg</id>
+	<student group="Romanticism">
+	<fio>Каспар Давид Фридрих</fio>
+	<average>1774-1840</average>
+	<id>https://muzei-mira.com/templates/museum/images/paint/strannik-kaspar-david-fridrix+.jpg</id>
 	</student>
-	<student group="I-11-1">
-	<fio>Жаваскрипский Антон Жаргонович</fio>
-	<average>39.50</average>
-	<id>http://www.kopyl.by/wp-content/uploads/2010/09/cry.jpg</id>
-	</student>
-	<student group="I-11-1">
-	<fio>Делфійский Андрій Делетович</fio>
-	<average>39.25</average>
-	<id>http://www.kopyl.by/wp-content/uploads/2010/09/cry.jpg</id>
+	<student group="Romanticism">
+	<fio>Эжен Делакруа</fio>
+	<average>1798-1863</average>
+	<id>http://enciclopedia.us.es/images/b/ba/La_libertad_guiando_al_pueblo_%281830%29.jpg</id>
 	</student>
 	<student group="I-11-1">
-	<fio>Сапортов Емануїл Файлович</fio>
-	<average>41.25</average>
-	<id>http://www.kopyl.by/wp-content/uploads/2010/09/cry.jpg</id>
+	<fio>Томас Гейнсборо</fio>
+	<average>1727-1788</average>
+	<id>http://cvetamira.ru/sites/default/files/zapad/sobirateli_hvorosta.jpg</id>
+	</student>
+	<student group="I-11-1">
+	<fio>Жан-Батист Грёз</fio>
+	<average>1725-1805</average>
+	<id>https://holstshop.ru/media/large/zhan-batist-grioz/225926.jpg</id>
+	</student>
+	<student group="I-11-1">
+	<fio>Якоб Филипп Хаккерт</fio>
+	<average>1737-1807</average>
+	<id>https://artchive.ru/res/media/img/oy800/work/0a8/202751.jpg</id>
 	</student>
 	<student group="I-10-1">
-	<fio>Кременчугов Сергій Паскальович</fio>
-	<average>44.50</average>
-	<id>http://www.kopyl.by/wp-content/uploads/2010/09/cry.jpg</id>
+	<fio>Эдгар Дега</fio>
+	<average>1834-1917</average>
+	<id>https://artchive.ru/res/media/img/orig/work/cdc/260491.jpg</id>
 	</student>
 	<student group="I-10-1">
-	<fio>Лодирєв Роман Еррорович</fio>
-	<average>47.25</average>
-	<id>http://www.kopyl.by/wp-content/uploads/2010/09/cry.jpg</id>
+	<fio>Гюстав Курбе</fio>
+	<average>1819-1877</average>
+	<id>http://www.reprodukciikartin.ru/wp-content/gallery/gyustav-kurbe-gustave-courbet/1950_45h36_gyustav-kurbe-devushka-s-chaykami-1865g.jpg</id>
 	</student>
 	<student group="I-10-1">
-	<fio>Кодоров Тимур Компільович</fio>
-	<average>57.25</average>
-	<id>http://www.kopyl.by/wp-content/uploads/2010/09/cry.jpg</id>
+	<fio>Роза Бонёр</fio>
+	<average>1822-1899</average>
+	<id>https://artchive.ru/res/media/img/oy800/work/a7c/320943.jpg</id>
 	</student>
 	<student group="I-10-1">
-	<fio>Студентенко Акакій Досович</fio>
-	<average>62.25</average>
-	<id>http://www.kopyl.by/wp-content/uploads/2010/09/cry.jpg</id>
+	<fio>Эдуард Мане</fio>
+	<average>1832-1883</average>
+	<id>http://img.radio.cz/VKPnx4DnU0AdzfQRIdcgbYCLdys=/fit-in/1200x1200/1365684804__pictures/c/obrazy/manet_edouard_zeleznice.jpg</id>
 	</student>
 	<student group="Impressionism">
-		<fio>Лодирєв Роман Еррорович</fio>
-		<average>47.25</average>
-		<id>http://www.kopyl.by/wp-content/uploads/2010/09/cry.jpg</id>
+		<fio>Поль Сезанн</fio>
+		<average>1839-1906</average>
+		<id>http://os.colta.ru/m/photo/2010/09/27/bouilloire_et_fruits_b.jpg</id>
 	</student>
 	<student group="Impressionism">
-		<fio>Кодоров Тимур Компільович</fio>
-		<average>57.25</average>
-		<id>http://www.kopyl.by/wp-content/uploads/2010/09/cry.jpg</id>
+		<fio>Пьер Огюст Ренуар</fio>
+		<average>1841-1919</average>
+		<id>http://orloffmagazine.com/sites/default/files/image_articles_news/1_61.jpg</id>
 	</student>
 	<student group="Impressionism">
-		<fio>Студентенко Акакій Досович</fio>
-		<average>62.25</average>
-		<id>http://www.kopyl.by/wp-content/uploads/2010/09/cry.jpg</id>
+		<fio>Клод Моне</fio>
+		<average>1840-1926</average>
+		<id>http://styleinsider.com.ua/wp-content/uploads/2017/11/vpechatlenie-voshod-solnca-1.jpg</id>
 	</student>
 	<student group="Modern">
-		<fio>Лодирєв Роман Еррорович</fio>
-		<average>47.25</average>
-		<id>http://www.kopyl.by/wp-content/uploads/2010/09/cry.jpg</id>
+		<fio>Альфонс Муха</fio>
+		<average>1860-1939</average>
+		<id>https://artifex.ru/wp-content/uploads/2015/01/%D0%A5%D1%83%D0%B4%D0%BE%D0%B6%D0%BD%D0%B8%D0%BA-Alfons_Mucha-1.jpg</id>
 	</student>
 	<student group="Modern">
-		<fio>Кодоров Тимур Компільович</fio>
-		<average>57.25</average>
-		<id>http://www.kopyl.by/wp-content/uploads/2010/09/cry.jpg</id>
+		<fio>Густав Климт</fio>
+		<average>1862-1918</average>
+		<id>https://artchive.ru/res/media/img/oy1000/work/0f2/303229.jpg</id>
 	</student>
 </students>
