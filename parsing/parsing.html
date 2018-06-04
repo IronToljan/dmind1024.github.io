@@ -42,23 +42,23 @@
 
 	<div name="fio0" id="fio0"></div>
 	<div name="average0" id="average0"></div>
-	<div name="id0" id="id0"></div>
+	<img name="id0" id="id0">
 
 	<div name="fio1" id="fio1"></div>
 	<div name="average1" id="average1"></div>
-	<div name="id1" id="id1"></div>
+	<img name="id1" id="id1">
 
 	<div name="fio2" id="fio2"></div>
 	<div name="average2" id="average2"></div>
-	<div name="id2" id="id2"></div>
+	<img name="id2" id="id2">
 
 	<div name="fio3" id="fio3"></div>
 	<div name="average3" id="average3"></div>
-	<div name="id3" id="id3"></div>
+	<img name="id3" id="id3">
 
 	<div name="fio4" id="fio4"></div>
 	<div name="average4" id="average4"></div>
-	<div name="id4" id="id4"></div>
+	<img name="id4" id="id4">
 
 	<script type="text/javascript">
 
@@ -66,85 +66,81 @@
 
 		function showSelectedCategory(coloredLink) {
 
-		 // coloredLink's name is passed in with onmouseover
-		 // and is assigned to the variable category.
-		 // category could either be 'I-12-1', 'I-11-1', or 'I-10-1'
+			 // coloredLink's name is passed in with onmouseover
+			 // and is assigned to the variable category.
+			 // category could either be 'I-12-1', 'I-11-1', or 'I-10-1'
 
-		 var group = coloredLink.name;
+			 var group = coloredLink.name;
 
-		 // Create a variable called categoryCounter
-		 // to use in the following for-loop.
+			 // Create a variable called categoryCounter
+			 // to use in the following for-loop.
 
-		 var categoryCounter = 0;
+			 var categoryCounter = 0;
 
-		 // # of div sections. Example: 0,1,2,3 so that's 4
+			 // # of div sections. Example: 0,1,2,3 so that's 4
 
-		 var divNum = 5; 
+			 var divNum = 5; 
 
-		 // Start the loop at 0 by convention and increment the variable i by
-		 // 1 until it reaches the length of xmlDoc.getElementsByTagName("product")
-		 // In this case the length is 9 because the XML file has 9 products.
+			 // Start the loop at 0 by convention and increment the variable i by
+			 // 1 until it reaches the length of xmlDoc.getElementsByTagName("product")
+			 // In this case the length is 9 because the XML file has 9 products.
 
-		 for (var i = 0; i < xmlDoc.getElementsByTagName("student").length; i++) {
+			 for (var i = 0; i < xmlDoc.getElementsByTagName("student").length; i++) {
 
-		 // The following 3 variables will end up looking something like
-		 // item0, item1, item2, item3, price0, price1, and so on...
-		 // These variables are set to correspond with the id's of the
-		 // divs above, which will display the data pulled from the XML file.
-		 // Notice the variables are created with the variable
-		 // categoryCounter rather than the variable i.
-		 // categoryCounter counts the number of times in the loop
-		 // that the product matches the category variable.
-		 // For category A, categoryCounter would begin at 0 and
-		 // reach 1 - that's 2 products.
-		 // For category B, categoryCounter would begin at 0 and
-		 // reach 2 - that's 3 products.
-		 // Remember to start counting from 0, not from 1
+				 // The following 3 variables will end up looking something like
+				 // item0, item1, item2, item3, price0, price1, and so on...
+				 // These variables are set to correspond with the id's of the
+				 // divs above, which will display the data pulled from the XML file.
+				 // Notice the variables are created with the variable
+				 // categoryCounter rather than the variable i.
+				 // categoryCounter counts the number of times in the loop
+				 // that the product matches the category variable.
+				 // For category A, categoryCounter would begin at 0 and
+				 // reach 1 - that's 2 products.
+				 // For category B, categoryCounter would begin at 0 and
+				 // reach 2 - that's 3 products.
+				 // Remember to start counting from 0, not from 1
 
-		 var fio = "fio" + categoryCounter;
-		 var average = "average" + categoryCounter;
-		 var id = "id" + categoryCounter;
+				 var fio = "fio" + categoryCounter;
+				 var average = "average" + categoryCounter;
+				 var id = "id" + categoryCounter;
 
-		 // if the category variable matches a category in the XML file...
-		 if (xmlDoc.getElementsByTagName("student")
-		 [i].attributes.getNamedItem("group").nodeValue == group) { 
+				 // if the category variable matches a category in the XML file...
+				 if (xmlDoc.getElementsByTagName("student")[i].attributes.getNamedItem("group").nodeValue == group) { 
 
-			 // assign the XML data in the category to the divs for display
-			 document.getElementById(fio).innerHTML = "Имя художника: "+
-			 xmlDoc.getElementsByTagName("fio")[i].childNodes[0].nodeValue;
-			 document.getElementById(average).innerHTML = "Годы жизни: " +
-			 xmlDoc.getElementsByTagName("average")[i].childNodes[0].nodeValue+"<p>Знаменитая картина художника:</p>";
-			 var rtut = document.getElementById(id);
-			 img = document.createElement("IMG");
-			 img.src = xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
-			 rtut.appendChild(img);
+					 // assign the XML data in the category to the divs for display
+					 document.getElementById(fio).innerHTML = "Имя художника: "+
+					 xmlDoc.getElementsByTagName("fio")[i].childNodes[0].nodeValue;
+					 document.getElementById(average).innerHTML = "Годы жизни: " +
+					 xmlDoc.getElementsByTagName("average")[i].childNodes[0].nodeValue+"<p>Знаменитая картина художника:</p>";
+					 var elem = document.getElementsByTagName("img")[i];
+					 elem.src=elem.src.replace("",xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue);
 
-			 // increment by 1 each time the category matches
-			 categoryCounter++;
+					 // increment by 1 each time the category matches
+					 categoryCounter++;
 
-		 } // end if
+				 } // end if
 
-		 } // end for-loop
+			 } // end for-loop
 
-		 // straggler variable is old data that should be cleared 
+			 // straggler variable is old data that should be cleared 
 
-		 for (var straggler = categoryCounter; straggler < divNum; straggler++) {
+			 for (var straggler = categoryCounter; straggler < divNum; straggler++) {
 
-			 // these variables get assigned new values 
+				 // these variables get assigned new values 
 
-			 fio = "fio" + straggler;
-			 average = "average" + straggler;
-			 id = "id" + straggler; 
+				 fio = "fio" + straggler;
+				 average = "average" + straggler;
+				 id = "id" + straggler; 
 
-			 // set to blank
+				 // set to blank
 
-			 document.getElementById(fio).innerHTML = "";
-			 document.getElementById(average).innerHTML = "";
-			 var block = document.getElementById(id);
-			 var image = block.children[0];
-			 block.removeChild(image);
+				 document.getElementById(fio).innerHTML = "";
+				 document.getElementById(average).innerHTML = "";
+				 var elem = document.getElementsById(id);
+				 elem.src=elem.src.replace(xmlDoc.getElementsByTagName("id")[straggler].childNodes[0].nodeValue,"");
 
-		 }
+			 }
 
 		}
 </script>
