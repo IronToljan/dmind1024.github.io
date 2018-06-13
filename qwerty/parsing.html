@@ -55,10 +55,6 @@
 
 		function showSelectedCategory(coloredLink) {
 
-			 // coloredLink's name is passed in with onmouseover
-			 // and is assigned to the variable category.
-			 // category could either be 'I-12-1', 'I-11-1', or 'I-10-1'
-
 			var fac = coloredLink.name;
 
 			 // Create a variable called categoryCounter
@@ -66,35 +62,32 @@
 
 			var categoryCounter = 0;
 
-			 // # of div sections. Example: 0,1,2,3 so that's 4
-
 			var divNum = 5; 
 
-			 // Start the loop at 0 by convention and increment the variable i by
-			 // 1 until it reaches the length of xmlDoc.getElementsByTagName("product")
-			 // In this case the length is 9 because the XML file has 9 products.
+			//перебор всех тегов faculty
 
 			for (var i = 0; i < xmlDoc.getElementsByTagName("faculty").length; i++) {
-				 
-				var pulpit = "pulpit" + categoryCounter;
 
-				 // if the category variable matches a category in the XML file...
-				if (xmlDoc.getElementsByTagName("faculty")
-				[i].attributes.getNamedItem("fac").nodeValue == fac) { 
+				for (var j=0;j<2;j++){
+					
+					var pulpit = "pulpit" + categoryCounter;
 
-					 // assign the XML data in the category to the divs for display
-					document.getElementById(pulpit).innerHTML =
-					xmlDoc.getElementsByTagName("pulpit")[i].childNodes[0].nodeValue;
+					 // if the category variable matches a category in the XML file...
+					if (xmlDoc.getElementsByTagName("faculty")[i].attributes.getNamedItem("fac").nodeValue == fac) {
 
-					 // increment by 1 each time the category matches
-					categoryCounter++;
+						document.getElementById(pulpit).innerHTML =
+						xmlDoc.getElementsByTagName("pulpit")[j].childNodes[0].nodeValue;
 
-				} // end if
+						 // increment by 1 each time the category matches
+						categoryCounter++;
 
-			} // end for-loop
+					}
 
-				 // straggler variable is old data that should be cleared 
+				}
 
+			}
+
+			//очистка содержимого блоков
 			for (var straggler = categoryCounter; straggler < divNum; straggler++) {
 
 				 // these variables get assigned new values 
