@@ -68,13 +68,15 @@
 
 			for (var i = 0; i < xmlDoc.getElementsByTagName("faculty").length; i++) {
 
-				for (var j=0;j<2;j++){
+				
+
 					
-					var pulpit = "pulpit" + categoryCounter;
 
 					 // if the category variable matches a category in the XML file...
-					if (xmlDoc.getElementsByTagName("faculty")[i].attributes.getNamedItem("fac").nodeValue == fac) {
+					if (xmlDoc.getElementsByTagName("faculty")[i].attributes.getNamedItem("fac").nodeValue == fac) 
 
+						for (var j=0;j<2;j++){
+							var pulpit = "pulpit" + categoryCounter;
 						document.getElementById(pulpit).innerHTML =
 						xmlDoc.getElementsByTagName("pulpit")[j].childNodes[0].nodeValue;
 
