@@ -1,0 +1,29 @@
+<faculties>
+	<faculty fac="FEM">
+		<pulpit>Кафедра экономики</pulpit>
+		<pulpit>Кафедра учета и аудита</pulpit>
+		<pulpit>Кафедра финансов и кредита</pulpit>
+		<pulpit>Кафедра менеджмента</pulpit>
+		<pulpit>Кафедра маркетинга</pulpit>
+	</faculty>
+	<faculty fac="FLHSS">
+		<pulpit>Кафедра теории, истории государства и права</pulpit>
+		<pulpit>Кафедра психологии, педагогики и философии</pulpit>
+		<pulpit>Кафедра отраслевых юридических наук</pulpit>
+		<pulpit>Кафедра украиноведения</pulpit>
+		<pulpit>Кафедра филологии и издательского дела</pulpit>
+		<pulpit>Кафедра перевода</pulpit>
+	</faculty>
+	<faculty fac="FECE">
+		<pulpit>Кафедра компьютерных и информационных систем</pulpit>
+		<pulpit>Кафедра информатики и высшей математики</pulpit>
+		<pulpit>Кафедра электронных аппаратов</pulpit>
+		<pulpit>Кафедра информационно-управляющих систем</pulpit>
+	</faculty>
+	<faculty fac="FNS">
+		<pulpit>Кафедра безопасности жизнедеятельности</pulpit>
+		<pulpit>Кафедра экологической безопасности</pulpit>
+		<pulpit>Кафедра биотехнологий и биоинженерии</pulpit>
+		<pulpit>Кафедра геодезии, землеустройства и кадастра</pulpit>
+	</faculty>
+</faculties>
