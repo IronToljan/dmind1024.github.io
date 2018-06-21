@@ -1,6 +1,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="style.css" rel="stylesheet">
 
 <script type="text/javascript">
 
@@ -31,34 +32,33 @@ function loadXML(file) {
 </script>
 </head>
 <body>
+	<div id="wrapper">
 
-<a name="USA" id="USA" href="#" onmouseover="showSelectedCategory(this)">США</a> 
+		<a name="USA" id="USA" href="#" onmouseover="showSelectedCategory(this)">США</a> 
 
-<a name="Australia" id="Australia" href="#" onmouseover="showSelectedCategory(this)">Австралия</a> 
+		<a name="Australia" id="Australia" href="#" onmouseover="showSelectedCategory(this)">Австралия</a> 
 
-<a name="Canada" id="Canada" href="#" onmouseover="showSelectedCategory(this)">Канада</a>
+		<a name="Canada" id="Canada" href="#" onmouseover="showSelectedCategory(this)">Канада</a>
 
-<a name="South_Korea" id="South_Korea" href="#" onmouseover="showSelectedCategory(this)">Южная Корея</a> 
+		<a name="South_Korea" id="South_Korea" href="#" onmouseover="showSelectedCategory(this)">Южная Корея</a> 
 
-<a name="North_Korea" id="North_Korea" href="#" onmouseover="showSelectedCategory(this)">Северя Корея</a> 
+		<a name="North_Korea" id="North_Korea" href="#" onmouseover="showSelectedCategory(this)">Северная Корея</a> 
 
-<a name="Russia" id="Russia" href="#" onmouseover="showSelectedCategory(this)">Россия</a>
+		<a name="Russia" id="Russia" href="#" onmouseover="showSelectedCategory(this)">Россия</a>
 
-<a name="Germany" id="Germany" href="#" onmouseover="showSelectedCategory(this)">Германия</a> 
+		<a name="Germany" id="Germany" href="#" onmouseover="showSelectedCategory(this)">Германия</a> 
 
-<a name="Japan" id="Japan" href="#" onmouseover="showSelectedCategory(this)">Япония</a> 
+		<a name="Japan" id="Japan" href="#" onmouseover="showSelectedCategory(this)">Япония</a> 
 
-<a name="Croatia" id="Croatia" href="#" onmouseover="showSelectedCategory(this)">Хорватия</a>
-
-
-
-
-<div name="country0" id="country0"></div>
-<div name="growth0" id="growth0"></div>
-<div name="weight0" id="weight0"></div>
-<div name="life0" id="life0"></div>
+		<a name="Croatia" id="Croatia" href="#" onmouseover="showSelectedCategory(this)">Хорватия</a>
 
 
+
+
+		<div name="country0" id="country0"></div>
+		<div name="growth0" id="growth0"></div>
+		<div name="weight0" id="weight0"></div>
+		<div name="life0" id="life0"></div>
 
 <script type="text/javascript">
 
@@ -81,7 +81,7 @@ function showSelectedCategory(coloredLink) {
  // 1 until it reaches the length of xmlDoc.getElementsByTagName("product")
  // In this case the length is 9 because the XML file has 9 products.
 
- for (var i = 0; i < xmlDoc.getElementsByTagName("student").length; i++) {
+ for (var i = 0; i < xmlDoc.getElementsByTagName("characteristic").length; i++) {
 
  var country = "country" + categoryCounter;
  var growth = "growth" + categoryCounter;
@@ -89,17 +89,17 @@ function showSelectedCategory(coloredLink) {
  var life = "life" + categoryCounter;
 
  // if the category variable matches a category in the XML file...
- if (xmlDoc.getElementsByTagName("student")
+ if (xmlDoc.getElementsByTagName("characteristic")
  [i].attributes.getNamedItem("group").nodeValue == group) { 
   
  // assign the XML data in the category to the divs for display
  document.getElementById(country).innerHTML =
  xmlDoc.getElementsByTagName("country")[i].childNodes[0].nodeValue;
- document.getElementById(growth).innerHTML = "Рост: " +
+ document.getElementById(growth).innerHTML = "Рост: "+
  xmlDoc.getElementsByTagName("growth")[i].childNodes[0].nodeValue;
- document.getElementById(weight).innerHTML = "Вес: " +
+ document.getElementById(weight).innerHTML = "Вес: "
  xmlDoc.getElementsByTagName("weight")[i].childNodes[0].nodeValue;
- document.getElementById(life).innerHTML = "Продолжительность жизни: " +
+ document.getElementById(life).innerHTML = "Продолжительность жизни: "
  xmlDoc.getElementsByTagName("life")[i].childNodes[0].nodeValue;
 
  // increment by 1 each time the category matches
@@ -131,5 +131,6 @@ function showSelectedCategory(coloredLink) {
 
 }
 </script>
+</div>
 </body>
 </html>
