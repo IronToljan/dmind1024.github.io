@@ -1,0 +1,30 @@
+a {
+	text-decoration: none;
+	color: #2B2F3B;
+	margin-right: 20px;
+	font-size: 20pt;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #BE376F;
+}
+
+body {
+	margin: 0;
+	background-color: #D4DEED;
+	color: #2B2F3B;
+	font-size: 18pt;
+}
+
+#wrapper {
+	padding-top: 30px;
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+}
+
+#Croatia {
+	margin-bottom: 40px;
+}
+
