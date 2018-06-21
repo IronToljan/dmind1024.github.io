@@ -70,7 +70,7 @@ style="color: green">Хорватия</a>
 
 <script type="text/javascript">
 
-var xmlDoc = loadXML("http://primat.org/OOEI/student.xml");
+var xmlDoc = loadXML("something.xml");
 
 function showSelectedCategory(coloredLink) {
 
@@ -89,25 +89,8 @@ function showSelectedCategory(coloredLink) {
 
  var divNum = 4; 
 
- // Start the loop at 0 by convention and increment the variable i by
- // 1 until it reaches the length of xmlDoc.getElementsByTagName("product")
- // In this case the length is 9 because the XML file has 9 products.
-
  for (var i = 0; i < xmlDoc.getElementsByTagName("student").length; i++) {
 
- // The following 3 variables will end up looking something like
- // item0, item1, item2, item3, price0, price1, and so on...
- // These variables are set to correspond with the id's of the
- // divs above, which will display the data pulled from the XML file.
- // Notice the variables are created with the variable
- // categoryCounter rather than the variable i.
- // categoryCounter counts the number of times in the loop
- // that the product matches the category variable.
- // For category A, categoryCounter would begin at 0 and
- // reach 1 - that's 2 products.
- // For category B, categoryCounter would begin at 0 and
- // reach 2 - that's 3 products.
- // Remember to start counting from 0, not from 1
 
  var fio = "fio" + categoryCounter;
  var average = "average" + categoryCounter;
