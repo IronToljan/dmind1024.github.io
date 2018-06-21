@@ -1,0 +1,47 @@
+<students>
+<student group="USA">
+<fio>171,5</fio>
+<average>81,5</average>
+<id>79,1</id>
+</student>
+<student group="Australia">
+<fio>Австралия</fio>
+<average>32.25</average>
+<id>1001</id>
+</student>
+<student group="Canada">
+<fio>Канада</fio>
+<average>39.50</average>
+<id>1100</id>
+</student>
+<student group="South_Korea">
+<fio>Южная Корея</fio>
+<average>39.25</average>
+<id>1101</id>
+</student>
+<student group="North_Korea">
+<fio>Северная Корея</fio>
+<average>41.25</average>
+<id>1102</id>
+</student>
+<student group="Russia">
+<fio>Россия</fio>
+<average>44.50</average>
+<id>1200</id>
+</student>
+<student group="Germany">
+<fio>Германия</fio>
+<average>47.25</average>
+<id>1201</id>
+</student>
+<student group="Japan">
+<fio>Япония</fio>
+<average>57.25</average>
+<id>1202</id>
+</student>
+<student group="Croatia">
+<fio>Хорватия</fio>
+<average>62.25</average>
+<id>1203</id>
+</student>
+</students>
