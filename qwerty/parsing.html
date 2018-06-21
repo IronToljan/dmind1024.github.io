@@ -95,11 +95,11 @@ function showSelectedCategory(coloredLink) {
  // assign the XML data in the category to the divs for display
  document.getElementById(country).innerHTML =
  xmlDoc.getElementsByTagName("country")[i].childNodes[0].nodeValue;
- document.getElementById(growth).innerHTML =
+ document.getElementById(growth).innerHTML = "Рост: " +
  xmlDoc.getElementsByTagName("growth")[i].childNodes[0].nodeValue;
- document.getElementById(weight).innerHTML =
+ document.getElementById(weight).innerHTML = "Вес: " +
  xmlDoc.getElementsByTagName("weight")[i].childNodes[0].nodeValue;
- document.getElementById(life).innerHTML =
+ document.getElementById(life).innerHTML = "Продолжительность жизни: " +
  xmlDoc.getElementsByTagName("life")[i].childNodes[0].nodeValue;
 
  // increment by 1 each time the category matches
