@@ -1,56 +1,56 @@
 <options>
-<student group="USA">
+<characteristic group="USA">
 <country>США</country>
 <growth>171,5</growth>
 <weight>81,5</weight>
 <life>79,1</life>
-</student>
-<student group="Australia">
+</characteristic>
+<characteristic group="Australia">
 <country>Австралия</country>
 <growth>171,4</growth>
 <weight>77,5</weight>
 <life>82,4</life>
-</student>
-<student group="Canada">
+</characteristic>
+<characteristic group="Canada">
 <country>Канада</country>
 <growth>169</growth>
 <weight>74</weight>
 <life>82</life>
-</student>
-<student group="South_Korea">
+</characteristic>
+<characteristic group="South_Korea">
 <country>Южная Корея</country>
 <growth>167,5</growth>
 <weight>63</weight>
 <life>81,9</life>
-</student>
-<student group="North_Korea">
+</characteristic>
+<characteristic group="North_Korea">
 <country>Северная Корея</country>
 <growth>161,5</growth>
 <weight>53</weight>
 <life>70,3</life>
-</student>
-<student group="Russia">
+</characteristic>
+<characteristic group="Russia">
 <country>Россия</country>
 <growth>172</growth>
 <weight>71</weight>
 <life>70,1</life>
-</student>
-<student group="Germany">
+</characteristic>
+<characteristic group="Germany">
 <country>Германия</country>
 <growth>180,1</growth>
 <weight>75</weight>
 <life>80,9</life>
-</student>
-<student group="Japan">
+</characteristic>
+<characteristic group="Japan">
 <country>Япония</country>
 <growth>164,5</growth>
 <weight>56</weight>
 <life>83,5</life>
-</student>
-<student group="Croatia">
+</characteristic>
+<characteristic group="Croatia">
 <country>Хорватия</country>
 <growth>180,5</growth>
 <weight>74,5</weight>
 <life>77,3</life>
-</student>
+</characteristic>
 </options>
