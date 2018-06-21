@@ -1,47 +1,56 @@
-<students>
+<options>
 <student group="USA">
-<fio>171,5</fio>
-<average>81,5</average>
-<id>79,1</id>
+<country>США</country>
+<growth>171,5</growth>
+<weight>81,5</weight>
+<life>79,1</life>
 </student>
 <student group="Australia">
-<fio>Австралия</fio>
-<average>32.25</average>
-<id>1001</id>
+<country>Австралия</country>
+<growth>171,4</growth>
+<weight>77,5</weight>
+<life>82,4</life>
 </student>
 <student group="Canada">
-<fio>Канада</fio>
-<average>39.50</average>
-<id>1100</id>
+<country>Канада</country>
+<growth>169</growth>
+<weight>74</weight>
+<life>82</life>
 </student>
 <student group="South_Korea">
-<fio>Южная Корея</fio>
-<average>39.25</average>
-<id>1101</id>
+<country>Южная Корея</country>
+<growth>167,5</growth>
+<weight>63</weight>
+<life>81,9</life>
 </student>
 <student group="North_Korea">
-<fio>Северная Корея</fio>
-<average>41.25</average>
-<id>1102</id>
+<country>Северная Корея</country>
+<growth>161,5</growth>
+<weight>53</weight>
+<life>70,3</life>
 </student>
 <student group="Russia">
-<fio>Россия</fio>
-<average>44.50</average>
-<id>1200</id>
+<country>Россия</country>
+<growth>172</growth>
+<weight>71</weight>
+<life>70,1</life>
 </student>
 <student group="Germany">
-<fio>Германия</fio>
-<average>47.25</average>
-<id>1201</id>
+<country>Германия</country>
+<growth>180,1</growth>
+<weight>75</weight>
+<life>80,9</life>
 </student>
 <student group="Japan">
-<fio>Япония</fio>
-<average>57.25</average>
-<id>1202</id>
+<country>Япония</country>
+<growth>164,5</growth>
+<weight>56</weight>
+<life>83,5</life>
 </student>
 <student group="Croatia">
-<fio>Хорватия</fio>
-<average>62.25</average>
-<id>1203</id>
+<country>Хорватия</country>
+<growth>180,5</growth>
+<weight>74,5</weight>
+<life>77,3</life>
 </student>
-</students>
+</options>
