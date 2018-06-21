@@ -32,39 +32,31 @@ function loadXML(file) {
 </head>
 <body>
 
-<a name="USA" id="USA" href="#" onmouseover="showSelectedCategory(this)"
-style="color: blue">США</a> 
+<a name="USA" id="USA" href="#" onmouseover="showSelectedCategory(this)">США</a> 
 
-<a name="Australia" id="Australia" href="#" onmouseover="showSelectedCategory(this)"
-style="color: red">Австралия</a> 
+<a name="Australia" id="Australia" href="#" onmouseover="showSelectedCategory(this)">Австралия</a> 
 
-<a name="Canada" id="Canada" href="#" onmouseover="showSelectedCategory(this)"
-style="color: green">Канада</a>
+<a name="Canada" id="Canada" href="#" onmouseover="showSelectedCategory(this)">Канада</a>
 
-<a name="South_Korea" id="South_Korea" href="#" onmouseover="showSelectedCategory(this)"
-style="color: blue">Южная Корея</a> 
+<a name="South_Korea" id="South_Korea" href="#" onmouseover="showSelectedCategory(this)">Южная Корея</a> 
 
-<a name="North_Korea" id="North_Korea" href="#" onmouseover="showSelectedCategory(this)"
-style="color: red">Северя Корея</a> 
+<a name="North_Korea" id="North_Korea" href="#" onmouseover="showSelectedCategory(this)">Северя Корея</a> 
 
-<a name="Russia" id="Russia" href="#" onmouseover="showSelectedCategory(this)"
-style="color: green">Россия</a>
+<a name="Russia" id="Russia" href="#" onmouseover="showSelectedCategory(this)">Россия</a>
 
-<a name="Germany" id="Germany" href="#" onmouseover="showSelectedCategory(this)"
-style="color: blue">Германия</a> 
+<a name="Germany" id="Germany" href="#" onmouseover="showSelectedCategory(this)">Германия</a> 
 
-<a name="Japan" id="Japan" href="#" onmouseover="showSelectedCategory(this)"
-style="color: red">Япония</a> 
+<a name="Japan" id="Japan" href="#" onmouseover="showSelectedCategory(this)">Япония</a> 
 
-<a name="Croatia" id="Croatia" href="#" onmouseover="showSelectedCategory(this)"
-style="color: green">Хорватия</a>
+<a name="Croatia" id="Croatia" href="#" onmouseover="showSelectedCategory(this)">Хорватия</a>
 
 
 
 
-<div name="fio0" id="fio0"></div>
-<div name="average0" id="average0"></div>
-<div name="id0" id="id0"></div>
+<div name="country0" id="country0"></div>
+<div name="growth0" id="growth0"></div>
+<div name="weight0" id="weight0"></div>
+<div name="life0" id="life0"></div>
 
 
 
@@ -73,10 +65,6 @@ style="color: green">Хорватия</a>
 var xmlDoc = loadXML("something.xml");
 
 function showSelectedCategory(coloredLink) {
-
- // coloredLink's name is passed in with onmouseover
- // and is assigned to the variable category.
- // category could either be 'I-12-1', 'I-11-1', or 'I-10-1'
 
  var group = coloredLink.name;
 
@@ -89,24 +77,30 @@ function showSelectedCategory(coloredLink) {
 
  var divNum = 4; 
 
+ // Start the loop at 0 by convention and increment the variable i by
+ // 1 until it reaches the length of xmlDoc.getElementsByTagName("product")
+ // In this case the length is 9 because the XML file has 9 products.
+
  for (var i = 0; i < xmlDoc.getElementsByTagName("student").length; i++) {
 
-
- var fio = "fio" + categoryCounter;
- var average = "average" + categoryCounter;
- var id = "id" + categoryCounter;
+ var country = "country" + categoryCounter;
+ var growth = "growth" + categoryCounter;
+ var weight = "weight" + categoryCounter;
+ var life = "life" + categoryCounter;
 
  // if the category variable matches a category in the XML file...
  if (xmlDoc.getElementsByTagName("student")
  [i].attributes.getNamedItem("group").nodeValue == group) { 
-
+  
  // assign the XML data in the category to the divs for display
- document.getElementById(fio).innerHTML =
- xmlDoc.getElementsByTagName("fio")[i].childNodes[0].nodeValue;
- document.getElementById(average).innerHTML =
- xmlDoc.getElementsByTagName("average")[i].childNodes[0].nodeValue;
- document.getElementById(id).innerHTML =
- xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
+ document.getElementById(country).innerHTML =
+ xmlDoc.getElementsByTagName("country")[i].childNodes[0].nodeValue;
+ document.getElementById(growth).innerHTML = "Рост: "+
+ xmlDoc.getElementsByTagName("growth")[i].childNodes[0].nodeValue;
+ document.getElementById(weight).innerHTML = "Вес: "
+ xmlDoc.getElementsByTagName("weight")[i].childNodes[0].nodeValue;
+ document.getElementById(life).innerHTML = "Продолжительность жизни: "
+ xmlDoc.getElementsByTagName("life")[i].childNodes[0].nodeValue;
 
  // increment by 1 each time the category matches
  categoryCounter++;
@@ -121,15 +115,17 @@ function showSelectedCategory(coloredLink) {
 
  // these variables get assigned new values 
 
- fio = "fio" + straggler;
- average = "average" + straggler;
- id = "id" + straggler; 
+ country = "country" + straggler;
+ growth = "growth" + straggler;
+ weight = "weight" + straggler; 
+ life = "life" + straggler;
 
  // set to blank
 
  document.getElementById(fio).innerHTML = "";
- document.getElementById(average).innerHTML = "";
- document.getElementById(id).innerHTML = "";
+ document.getElementById(growth).innerHTML = "";
+ document.getElementById(weight).innerHTML = "";
+ document.getElementById(life).innerHTML = "";
 
  }
 
